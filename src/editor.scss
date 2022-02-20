@@ -1,0 +1,230 @@
+/**
+* editor css
+**/
+
+[data-type="ifdigital/if-collapsing"]{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .block-list-appender{
+    position: relative!important;
+    display: none;
+  }
+
+  &:hover{
+    .block-list-appender{
+      display: block;
+    }
+  }
+}
+
+[data-type="ifdigital/if-collapsing-item"]{
+  &.has-child-selected, &.is-selected{
+    [data-type="ifdigital/if-collapsing-item"]{
+      display: block;
+    }
+  }
+}
+
+[data-view="is-style-tabs"]{
+  position: relative;
+  padding-top: 3rem;
+
+  [data-type="ifdigital/if-collapsing-item"], .block-editor-inner-blocks, .block-editor-block-list__layout{
+    position: static;
+
+    label{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-bottom: 1px solid currentColor;
+      font-size: inherit;
+      text-transform: none;
+      text-align: center;
+
+      &:before{
+        display: none;
+      }
+
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+
+[data-view="is-style-tabs"][data-items="1"]{
+  .block-editor-inner-blocks{
+    .block-editor-block-list__layout{
+      div{
+        &:nth-child(1){
+          label{
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-view="is-style-tabs"][data-items="2"]{
+  .block-editor-inner-blocks{
+    .block-editor-block-list__layout{
+      div{
+        &:nth-child(1){
+          label{
+            width: 50%;
+            max-width: 50%;
+            min-width: 50%;
+          }
+        }
+
+        &:nth-child(2){
+          label{
+            width: 50%;
+            max-width: 50%;
+            min-width: 50%;
+            left: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-view="is-style-tabs"][data-items="3"]{
+  .block-editor-inner-blocks{
+    .block-editor-block-list__layout{
+      div{
+        &:nth-child(1){
+          label{
+            width: 33.33%;
+            max-width: 33.33%;
+            min-width: 33.33%;
+          }
+        }
+
+        &:nth-child(2){
+          label{
+            width: 33.33%;
+            max-width: 33.33%;
+            min-width: 33.33%;
+            left: 33.33%;
+          }
+        }
+
+        &:nth-child(3){
+          label{
+            width: 33.33%;
+            max-width: 33.33%;
+            min-width: 33.33%;
+            left: 66.66%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-view="is-style-tabs"][data-items="4"]{
+  .block-editor-inner-blocks{
+    .block-editor-block-list__layout{
+      div{
+        &:nth-child(1){
+          label{
+            width: 25%;
+            max-width: 25%;
+            min-width: 25%;
+          }
+        }
+
+        &:nth-child(2){
+          label{
+            width: 25%;
+            max-width: 25%;
+            min-width: 25%;
+            left: 25%;
+          }
+        }
+
+        &:nth-child(3){
+          label{
+            width: 25%;
+            max-width: 25%;
+            min-width: 25%;
+            left: 50%;
+          }
+        }
+
+        &:nth-child(4){
+          label{
+            width: 25%;
+            max-width: 25%;
+            min-width: 25%;
+            left: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-view="is-style-tabs"][data-items="5"]{
+  .block-editor-inner-blocks{
+    .block-editor-block-list__layout{
+      div{
+        &:nth-child(1){
+          label{
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+          }
+        }
+
+        &:nth-child(2){
+          label{
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            left: 20%;
+          }
+        }
+
+        &:nth-child(3){
+          label{
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            left: 40%;
+          }
+        }
+
+        &:nth-child(4){
+          label{
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            left: 60%;
+          }
+        }
+
+        &:nth-child(5){
+          label{
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            left: 80%;
+          }
+        }
+      }
+    }
+  }
+}

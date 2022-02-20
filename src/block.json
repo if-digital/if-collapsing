@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ifdigital/if-collapsing",
+	"version": "1.0.0",
+	"title": "IF.COLLAPSING",
+	"category": "design",
+	"icon": "index-card",
+	"description": "Easy to build Tabs or Accordions by using this Gutenberg Block. No Javascript, only pure CSS.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "if-collapsing",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
