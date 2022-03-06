@@ -19,8 +19,15 @@
 }
 
 [data-type="ifdigital/if-collapsing-item"]{
+
   &.has-child-selected, &.is-selected{
+    display: block!important;
+
     [data-type="ifdigital/if-collapsing-item"]{
+      display: block!important;
+    }
+
+    .wp-block-ifdigital-if-collapsing-item-content{
       display: block;
     }
   }

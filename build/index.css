@@ -16,7 +16,13 @@
   display: block;
 }
 
+[data-type="ifdigital/if-collapsing-item"].has-child-selected, [data-type="ifdigital/if-collapsing-item"].is-selected {
+  display: block !important;
+}
 [data-type="ifdigital/if-collapsing-item"].has-child-selected [data-type="ifdigital/if-collapsing-item"], [data-type="ifdigital/if-collapsing-item"].is-selected [data-type="ifdigital/if-collapsing-item"] {
+  display: block !important;
+}
+[data-type="ifdigital/if-collapsing-item"].has-child-selected .wp-block-ifdigital-if-collapsing-item-content, [data-type="ifdigital/if-collapsing-item"].is-selected .wp-block-ifdigital-if-collapsing-item-content {
   display: block;
 }
 

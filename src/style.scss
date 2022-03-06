@@ -36,7 +36,6 @@
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
 			font-size: 1.2rem;
-			text-transform: uppercase;
 			font-weight: bold;
 
 			&:after{
@@ -126,8 +125,8 @@ div[data-view="is-style-tabs"]{
       position: absolute;
       top: 0;
       left: 0;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -155,9 +154,9 @@ div[data-view="is-style-tabs"]{
   &[data-items="1"]{
     .wp-block-ifdigital-if-collapsing-item{
       label{
-        width: calc(100% - 2rem);
-        max-width: calc(100% - 2rem);
-        min-width: calc(100% - 2rem);
+        width: calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+        min-width: calc(100% - 1rem);
       }
     }
   }
@@ -165,9 +164,9 @@ div[data-view="is-style-tabs"]{
   &[data-items="2"]{
     .wp-block-ifdigital-if-collapsing-item{
       label{
-        width: calc(50% - 2rem);
-        max-width: calc(100% - 2rem);
-        min-width: calc(100% - 2rem);
+        width: calc(50% - 1rem);
+        max-width: calc(100% - 1rem);
+        min-width: calc(100% - 1rem);
       }
 
       &:nth-child(2){
@@ -181,9 +180,9 @@ div[data-view="is-style-tabs"]{
   &[data-items="3"]{
     .wp-block-ifdigital-if-collapsing-item{
       label{
-        width: calc(33.33% - 2rem);
-        max-width: calc(33.33% - 2rem);
-        min-width: calc(33.33% - 2rem);
+        width: calc(33.33% - 1rem);
+        max-width: calc(33.33% - 1rem);
+        min-width: calc(33.33% - 1rem);
       }
 
       &:nth-child(2){
@@ -202,9 +201,9 @@ div[data-view="is-style-tabs"]{
   &[data-items="4"]{
     .wp-block-ifdigital-if-collapsing-item{
       label{
-        width: calc(25% - 2rem);
-        max-width: calc(25% - 2rem);
-        min-width: calc(25% - 2rem);
+        width: calc(25% - 1rem);
+        max-width: calc(25% - 1rem);
+        min-width: calc(25% - 1rem);
       }
 
       &:nth-child(2){
@@ -228,9 +227,9 @@ div[data-view="is-style-tabs"]{
   &[data-items="5"]{
     .wp-block-ifdigital-if-collapsing-item{
       label{
-        width: calc(20% - 2rem);
-        max-width: calc(20% - 2rem);
-        min-width: calc(20% - 2rem);
+        width: calc(20% - 1rem);
+        max-width: calc(20% - 1rem);
+        min-width: calc(20% - 1rem);
       }
 
       &:nth-child(2){

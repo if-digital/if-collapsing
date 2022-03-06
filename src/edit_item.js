@@ -28,57 +28,33 @@ const input = '';
 /**
  * Edit
 */
-export default function Edit( { attributes, isSelected, setAttributes } ) {
+export default function Edit( { clientId, attributes, isSelected, setAttributes } ) {
 
+  const attr = (clientId);
   const instanceId = useInstanceId(Edit);
+  const blockCount = useSelect( ( select ) => select( 'core/block-editor' ).getBlock( clientId ) );
+  const blockCountLenght = blockCount.length;
 	const { title, collapsing_item_id } = attributes;
 	setAttributes({ collapsing_item_id: instanceId });
 
-  if ( collapsing_item_id == 0 ) {
+  return (
+    <div {...useBlockProps()}>
 
-    return (
-      <div {...useBlockProps()}>
+      <input type="radio" id={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`} name="tab-group" />
 
-        <input checked type="radio" id={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`} name="tab-group" />
+      <label for={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`}>
+        <RichText key="editable"
+          tagName="span"
+          placeholder="Title"
+          value={ attributes.collapsing_item_title }
+          onChange={ ( val_collapsing_item_title ) => setAttributes({ collapsing_item_title: val_collapsing_item_title }) }
+        />
+      </label>
 
-        <label for={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`}>
-          <RichText key="editable"
-            tagName="span"
-            placeholder="Title"
-            value={ attributes.collapsing_item_title }
-            onChange={ ( val_collapsing_item_title ) => setAttributes({ collapsing_item_title: val_collapsing_item_title }) }
-          />
-        </label>
-
-        <div class="wp-block-ifdigital-if-collapsing-item-content">
-          <InnerBlocks />
-        </div>
-
+      <div class="wp-block-ifdigital-if-collapsing-item-content">
+        <InnerBlocks />
       </div>
-    );
 
-  } else {
-
-    return (
-      <div {...useBlockProps()}>
-
-        <input type="radio" id={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`} name="tab-group" />
-
-        <label for={`wp-block-ifdigital-if-collapsing-item-id-${collapsing_item_id}`}>
-          <RichText key="editable"
-            tagName="span"
-            placeholder="Title"
-            value={ attributes.collapsing_item_title }
-            onChange={ ( val_collapsing_item_title ) => setAttributes({ collapsing_item_title: val_collapsing_item_title }) }
-          />
-        </label>
-
-        <div class="wp-block-ifdigital-if-collapsing-item-content">
-          <InnerBlocks />
-        </div>
-
-      </div>
-    );
-
-  }
+    </div>
+  );
 }
