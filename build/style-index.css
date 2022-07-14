@@ -35,14 +35,16 @@
 .wp-block-ifdigital-if-collapsing .wp-block-ifdigital-if-collapsing-item label, .wp-block-ifdigital-if-collapsing [data-type="ifdigital/if-collapsing-item"] label, [data-type="ifdigital/if-collapsing"] .wp-block-ifdigital-if-collapsing-item label, [data-type="ifdigital/if-collapsing"] [data-type="ifdigital/if-collapsing-item"] label {
   display: block;
   position: relative;
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+  width: calc(100% - 2rem);
+  max-width: calc(100% - 2rem);
+  min-width: calc(100% - 2rem);
   cursor: pointer;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
+  padding-right: 2rem;
+  line-height: 1.4;
 }
 .wp-block-ifdigital-if-collapsing .wp-block-ifdigital-if-collapsing-item label:after, .wp-block-ifdigital-if-collapsing [data-type="ifdigital/if-collapsing-item"] label:after, [data-type="ifdigital/if-collapsing"] .wp-block-ifdigital-if-collapsing-item label:after, [data-type="ifdigital/if-collapsing"] [data-type="ifdigital/if-collapsing-item"] label:after {
   content: "";
